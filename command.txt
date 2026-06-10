@@ -1,0 +1,13 @@
+npx ts-node \
+  --transpile-only \
+  --compiler-options '{"module":"CommonJS","moduleResolution":"Node","verbatimModuleSyntax":false,"target":"ES2020","skipLibCheck":true}' \
+  shade_from_matrix.ts \
+  --src compilationdictee_original.docx \
+  --csv "compilation_résultats règles_melr.csv" \
+  --out Tableau_couleurs.docx \
+  --header-row-index 1 \
+  --student-row-offset 0 \
+  --first-data-col-index 1 \
+  --color-1 00FF00 \
+  --color-2 FF0000 \
+  --color-empty FFFF00
